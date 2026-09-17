@@ -18,7 +18,6 @@
 
 body {
     background-color: var(--e0);
-    /* Halftone pattern P5 Style */
     background-image: 
         radial-gradient(var(--e1) 15%, transparent 16%),
         radial-gradient(var(--e1) 15%, transparent 16%),
@@ -35,7 +34,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Enlace de accesibilidad */
 .skip-link {
     position: absolute;
     top: -100px; left: 20px;
@@ -53,7 +51,6 @@ body {
 }
 .skip-link:focus { top: 20px; }
 
-/* Texto Gigante de Fondo */
 .bg-text {
     position: fixed;
     top: 50%;
@@ -76,7 +73,6 @@ body {
     100% { transform: translate(-45%, -55%) rotate(-12deg) scale(1.05); }
 }
 
-/* Cinta de Peligro Superior */
 .b-cs {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 12px;
@@ -98,7 +94,6 @@ body {
 
 .sb { position: sticky; top: 60px; z-index: 10; display: flex; flex-direction: column; gap: 20px; }
 
-/* Tarjeta Principal de Identidad (Header Sidebar) */
 .b-cd {
     background: var(--e7);
     border: 6px solid var(--e6);
@@ -114,7 +109,6 @@ body {
     transform: rotate(-1deg) scale(1.02);
 }
 
-/* Decoración P5 (Estrella) */
 .p5-star {
     position: absolute;
     width: 44px; height: 44px;
@@ -153,7 +147,6 @@ body {
     font-weight: 700;
 }
 
-/* Menú Estilo P5 */
 .p5-m { display: flex; flex-direction: column; gap: 15px; }
 
 .m-btn {
@@ -200,7 +193,6 @@ body {
     box-shadow: 10px 10px 0 var(--e2);
 }
 
-/* Elemento HUD de Estado */
 .hud {
     background: var(--e6);
     border-left: 5px solid var(--e5);
@@ -219,7 +211,6 @@ body {
 .hud-r span:first-child { color: var(--e8); }
 .hud-ok { color: var(--e3); font-weight: 700; }
 
-/* Contenedor Principal (Paneles) */
 .c-ar { position: relative; z-index: 5; min-width: 0; }
 
 .p5-p {
@@ -283,7 +274,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Espacio de Imagen P5 Style (Perfil) */
 .pf-g {
     display: grid; grid-template-columns: 220px 1fr; gap: 30px; align-items: center;
 }
@@ -332,7 +322,6 @@ body {
 .b-tx p + p { margin-top: 15px; }
 .b-tx strong { color: var(--e6); background: var(--e3); padding: 2px 8px; font-weight: 900; transform: skewX(-10deg); display: inline-block; }
 
-/* Info Boxes */
 .i-bg { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 35px; }
 .i-bx {
     background: var(--e6); border: 2px solid var(--e7);
@@ -343,7 +332,6 @@ body {
 .i-bx label { display: block; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 700; color: var(--e5); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
 .i-bx span { font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--e7); font-weight: 500; }
 
-/* Categorías de Habilidades */
 .skg + .skg { margin-top: 35px; }
 .skg-t {
     font-family: 'Bebas Neue', cursive;
@@ -356,7 +344,6 @@ body {
     text-shadow: 3px 3px 0 var(--e6);
 }
 
-/* Barras de Habilidad tipo HP/SP RPG */
 .sk-l { display: flex; flex-direction: column; gap: 25px; }
 .sk-i { position: relative; }
 .sk-if { display: flex; justify-content: space-between; font-family: 'Oswald', sans-serif; font-size: 20px; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
@@ -381,7 +368,6 @@ body {
     width: 10px; height: 100%; background: var(--e7);
 }
 
-/* Tarjetas de Proyectos/Experiencia */
 .pj-c {
     background: var(--e7); border: 4px solid var(--e6);
     padding: 25px; margin-bottom: 25px;
@@ -410,7 +396,6 @@ body {
 .pj-co { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--e2); text-transform: uppercase; letter-spacing: 1.5px; font-size: 15px; margin-top: 4px; }
 .pj-d { font-size: 16px; color: #333; margin-top: 8px; font-weight: 600; line-height: 1.5; }
 
-/* Etiquetas de Tecnologías en Tarjetas */
 .pj-tg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .pj-tg span {
     font-family: 'Oswald', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
@@ -418,7 +403,6 @@ body {
     padding: 3px 8px; text-transform: uppercase; transform: skewX(-8deg); display: inline-block;
 }
 
-/* Contacto */
 .ct-g { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
 .ct-l {
     display: flex; align-items: center; justify-content: space-between;
@@ -434,7 +418,6 @@ body {
 .ct-l:hover { color: var(--e6); transform: scale(1.03) rotate(-1deg); box-shadow: 10px 10px 0 var(--e5); border-color: var(--e6); }
 .ct-l:hover::before { left: 0; }
 
-/* Pie de Página */
 .ft {
     max-width: 1300px;
     margin: 40px auto 0;
@@ -465,6 +448,37 @@ body {
     .pj-c { flex-direction: column; text-align: center; clip-path: none; transform: skewX(-3deg); }
     .bg-text { font-size: 40vw; }
     .ct-l { font-size: 22px; flex-direction: column; text-align: center; gap: 5px; }
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--e2);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--e3);
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--e2) transparent;
 }
 </style>
 </head>
@@ -502,7 +516,6 @@ body {
     </aside>
 
     <main class="c-ar" id="main-content">
-        <!-- SECCIÓN 01: SOBRE MÍ -->
         <section id="p-ab" class="p5-p active" role="tabpanel" aria-labelledby="tab-p-ab" tabindex="0">
             <div class="p-hd">
                 <h2 class="p-ttl">PERFIL PERSONAL</h2>
@@ -531,7 +544,6 @@ body {
             </div>
         </section>
 
-        <!-- SECCIÓN 02: EXPERIENCIA -->
         <section id="p-ex" class="p5-p" role="tabpanel" aria-labelledby="tab-p-ex" tabindex="0">
             <div class="p-hd">
                 <h2 class="p-ttl">TRAYECTORIA</h2>
@@ -573,7 +585,6 @@ body {
             </article>
         </section>
 
-        <!-- SECCIÓN 03: HABILIDADES -->
         <section id="p-sk" class="p5-p" role="tabpanel" aria-labelledby="tab-p-sk" tabindex="0">
             <div class="p-hd">
                 <h2 class="p-ttl">TECH STACK</h2>
@@ -625,7 +636,6 @@ body {
             </div>
         </section>
 
-        <!-- SECCIÓN 04: PROYECTOS -->
         <section id="p-pj" class="p5-p" role="tabpanel" aria-labelledby="tab-p-pj" tabindex="0">
             <div class="p-hd">
                 <h2 class="p-ttl">PROYECTOS DESTACADOS</h2>
@@ -665,7 +675,6 @@ body {
             </article>
         </section>
 
-        <!-- SECCIÓN 05: CONTACTO -->
         <section id="p-ct" class="p5-p" role="tabpanel" aria-labelledby="tab-p-ct" tabindex="0">
             <div class="p-hd">
                 <h2 class="p-ttl">CANALES DE CONTACTO</h2>
@@ -691,18 +700,26 @@ body {
 </footer>
 
 <script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('dragstart', e => e.preventDefault());
+document.addEventListener('keydown', e => {
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')) {
+        e.preventDefault();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const btns = document.querySelectorAll('.m-btn');
     const panels = document.querySelectorAll('.p5-p');
     const clockEl = document.getElementById('clock');
     const yearEl = document.getElementById('year');
 
-    // Año dinámico en el footer
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
 
-    // Actualización del Reloj en Vivo
     const updateClock = () => {
         if (!clockEl) return;
         const d = new Date();
@@ -712,7 +729,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClock();
     setInterval(updateClock, 1000);
 
-    // Animación de las barras de progreso
     const animateBars = (panel) => {
         const bars = panel.querySelectorAll('.pg-fl');
         bars.forEach((bar, index) => {
@@ -725,14 +741,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Función para cambiar de pestaña
     const activateTab = (targetId, options = {}) => {
         const targetBtn = Array.from(btns).find(b => b.getAttribute('data-t') === targetId);
         const targetPanel = document.getElementById(targetId);
 
         if (!targetBtn || !targetPanel) return;
 
-        // Actualizar estado de los botones
         btns.forEach(b => {
             const isSelected = b === targetBtn;
             b.classList.toggle('active', isSelected);
@@ -740,11 +754,10 @@ document.addEventListener('DOMContentLoaded', () => {
             b.tabIndex = isSelected ? 0 : -1;
         });
 
-        // Actualizar visibilidad de paneles
         panels.forEach(p => {
             p.classList.remove('active');
             p.style.animation = 'none';
-            void p.offsetHeight; /* Recalcular estilo para reiniciar animación */
+            void p.offsetHeight;
             p.style.animation = null;
         });
 
@@ -767,7 +780,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Listeners para clics en botones
     btns.forEach(btn => {
         btn.addEventListener('click', function() {
             const targetId = this.getAttribute('data-t');
@@ -775,7 +787,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navegación por teclado (Teclas 1 a 5 y Flechas)
     document.addEventListener('keydown', (e) => {
         const activeTag = (document.activeElement.tagName || '').toLowerCase();
         if (activeTag === 'input' || activeTag === 'textarea') return;
@@ -808,7 +819,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Cargar pestaña mediante Hash en la URL
     const initialHash = window.location.hash.replace('#', '');
     if (initialHash && document.getElementById(initialHash)) {
         activateTab(initialHash, { updateHash: false });
