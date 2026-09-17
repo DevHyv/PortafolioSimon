@@ -2,516 +2,818 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Portfolio — CV Leonardo Simon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leonardo Simon — Portfolio Confidant</title>
+<meta name="description" content="Portafolio de Leonardo Simon — Desarrollador y multimedia en Querétaro.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--g:#8CFF3A;--g2:#5FD61F;--p:#8B3DFF;--p2:#5B1FA8;--bg:#07050c;--t:#d5e3c8;--w:#eef4e6;--k:#0a0612}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;overflow:hidden}
-body{background:var(--bg);color:var(--t);font-family:'Barlow Condensed',system-ui,sans-serif;font-size:16px;letter-spacing:.5px;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
-.bg{position:fixed;inset:-100%;background:repeating-linear-gradient(45deg,#0a0612 0 62px,#120a24 62px 124px);animation:bs 24s linear infinite;z-index:0}
-@keyframes bs{to{transform:translate(87.7px,87.7px)}}
-.bg::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 42px,rgba(140,255,58,.04) 42px 84px)}
-.gp{position:fixed;width:80vmax;height:80vmax;right:-28vmax;top:-28vmax;background:radial-gradient(circle,rgba(139,61,255,.28),transparent 62%);z-index:0;pointer-events:none}
-.gg{position:fixed;width:60vmax;height:60vmax;left:-22vmax;bottom:-24vmax;background:radial-gradient(circle,rgba(140,255,58,.13),transparent 65%);z-index:0;pointer-events:none}
-.sl{position:fixed;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.2) 0 1px,transparent 1px 3px);opacity:.5}
-.vg{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(circle at 42% 42%,transparent 28%,rgba(0,0,0,.82) 100%)}
-.tb{position:fixed;left:clamp(16px,3.4vw,58px);top:clamp(14px,3.6vh,50px);z-index:100;pointer-events:none;max-width:min(360px,46vw)}
-.tb>*{pointer-events:auto}
-.lg{font-family:'Anton',Impact,sans-serif;font-size:clamp(32px,4.6vw,64px);line-height:.9;letter-spacing:-1px;color:var(--w);transform:skewX(-10deg);text-shadow:5px 5px 0 var(--p),9px 9px 0 rgba(140,255,58,.55);animation:si .75s cubic-bezier(.2,1.2,.35,1) backwards}
-.tg{margin-top:8px;font-size:clamp(10px,1vw,14px);font-weight:600;letter-spacing:6px;text-transform:uppercase;color:var(--g);transform:skewX(-10deg);text-shadow:0 0 16px rgba(140,255,58,.5);animation:si .75s .08s cubic-bezier(.2,1.2,.35,1) backwards}
-@keyframes si{from{opacity:0;transform:translateX(-90px) skewX(-10deg)}}
-.hz{height:7px;width:min(180px,42vw);margin-top:14px;background:repeating-linear-gradient(45deg,var(--g) 0 10px,#0a0612 10px 20px);transform:skewX(-20deg);opacity:.7;box-shadow:0 0 18px rgba(140,255,58,.35)}
-.mn{margin-top:clamp(16px,3vh,34px);display:flex;flex-direction:column;align-items:flex-start;gap:9px;animation:mi .75s .18s cubic-bezier(.2,1.2,.35,1) backwards}
-@keyframes mi{from{opacity:0;transform:translateX(-80px)}}
-.mb{position:relative;overflow:hidden;border:none;background:var(--w);color:var(--k);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(15px,1.45vw,21px);letter-spacing:3.5px;text-transform:uppercase;padding:8px 32px 8px 24px;transform:skewX(-14deg);cursor:pointer;box-shadow:6px 6px 0 rgba(139,61,255,.95);transition:color .2s,box-shadow .2s,transform .2s}
-.mb .tx{position:relative;z-index:2;display:block;transform:skewX(14deg)}
-.mb::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--g),var(--g2));transform:translateX(-101%);transition:transform .32s cubic-bezier(.65,0,.35,1);z-index:1}
-.mb:hover{color:var(--k);box-shadow:6px 6px 0 rgba(140,255,58,.9)}
-.mb:hover::after{transform:translateX(0)}
-.mb:active{transform:skewX(-14deg) translate(3px,3px);box-shadow:2px 2px 0 rgba(139,61,255,.95)}
-.mb:focus-visible{outline:2px solid var(--g);outline-offset:3px}
-#dk{position:fixed;inset:0;z-index:50;pointer-events:none}
-.wn{position:absolute;width:min(560px,92vw);pointer-events:auto;display:none}
-.wn.op{display:block;animation:pp .45s cubic-bezier(.2,1.5,.45,1)}
-@keyframes pp{0%{opacity:0;transform:scale(.86) rotate(-3deg)}60%{opacity:1;transform:scale(1.02) rotate(.6deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
-.wn::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.75);transform:translate(26px,26px);clip-path:polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);z-index:-2}
-.wn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--p) 0,var(--p2) 45%,var(--g) 100%);transform:translate(13px,13px);clip-path:polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);z-index:-1}
-.wi{position:relative;background:linear-gradient(160deg,#1b0d31 0,#0d0616 55%,#120a20 100%);border:1px solid rgba(140,255,58,.3);clip-path:polygon(0 0,100% 0,100% calc(100% - 30px),calc(100% - 30px) 100%,0 100%);overflow:hidden}
-.wh{display:flex;align-items:center;justify-content:space-between;gap:14px;background:linear-gradient(90deg,#0a0612,#150b26);padding:10px 14px;cursor:grab;touch-action:none;border-bottom:1px solid rgba(140,255,58,.22)}
-.wh:active{cursor:grabbing}
-.wt{font-family:'Anton',Impact,sans-serif;font-size:16px;letter-spacing:5px;text-transform:uppercase;color:var(--w);transform:skewX(-8deg);text-shadow:3px 3px 0 var(--p),5px 5px 0 rgba(140,255,58,.5)}
-.wc{flex:none;width:28px;height:28px;display:grid;place-items:center;border:none;background:var(--g);color:#0a0612;font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;line-height:1;cursor:pointer;transform:skewX(-10deg);transition:background .2s,color .2s,box-shadow .2s}
-.wc:hover{background:var(--p);color:var(--w);box-shadow:0 0 18px rgba(139,61,255,.8)}
-.st{position:relative;height:3px;background:rgba(140,255,58,.1);overflow:hidden}
-.st i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--g));box-shadow:0 0 12px rgba(140,255,58,.9);transition:width .08s linear}
-.wb{padding:22px 22px 30px;max-height:56vh;overflow-y:auto;scroll-behavior:smooth;overscroll-behavior:contain;font-size:16.5px;line-height:1.55;color:var(--t);user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;scrollbar-width:thin;scrollbar-color:var(--g) rgba(140,255,58,.08)}
-.wb::-webkit-scrollbar{width:10px}
-.wb::-webkit-scrollbar-track{background:rgba(140,255,58,.07)}
-.wb::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--p),var(--g));border:2px solid #0d0616}
-.rv{opacity:0;translate:0 26px;filter:blur(3px);transition:opacity .55s cubic-bezier(.2,.9,.25,1),translate .55s cubic-bezier(.2,.9,.25,1),filter .55s ease}
-.rv.rd{opacity:1;translate:0 0;filter:blur(0)}
-.tl .rv:nth-child(1),.pj .rv:nth-child(1),.sk .rv:nth-child(1),.cl .rv:nth-child(1){transition-delay:0s}
-.tl .rv:nth-child(2),.pj .rv:nth-child(2),.sk .rv:nth-child(2),.cl .rv:nth-child(2){transition-delay:.07s}
-.tl .rv:nth-child(3),.pj .rv:nth-child(3),.sk .rv:nth-child(3),.cl .rv:nth-child(3){transition-delay:.14s}
-.tl .rv:nth-child(4),.pj .rv:nth-child(4),.sk .rv:nth-child(4),.cl .rv:nth-child(4){transition-delay:.21s}
-.sk .rv:nth-child(5),.cl .rv:nth-child(5){transition-delay:.28s}
-.sk .rv:nth-child(6),.cl .rv:nth-child(6){transition-delay:.35s}
-.sk .rv:nth-child(7){transition-delay:.42s}
-.ag{display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:start;margin-bottom:6px}
-.pf{position:relative;width:100%;aspect-ratio:4/5;transform:skewX(-6deg);background:linear-gradient(135deg,var(--p),var(--p2) 60%,var(--g));clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%);padding:3px;box-shadow:10px 10px 0 rgba(0,0,0,.55)}
-.pi{width:106%;height:100%;margin-left:-3%;background:repeating-linear-gradient(45deg,#150b26 0 14px,#1c0e30 14px 28px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;clip-path:polygon(0 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%);transform:skewX(6deg) translateX(-3%);color:var(--g);text-align:center;padding:14px}
-.pi .cm{width:44px;height:44px;border:2px solid var(--g);border-radius:50%;display:grid;place-items:center;margin-bottom:6px;box-shadow:0 0 18px rgba(140,255,58,.4);position:relative}
-.pi .cm::before{content:'';width:16px;height:16px;border:2px solid var(--g);border-radius:50%}
-.pi .cm::after{content:'';position:absolute;top:6px;right:6px;width:6px;height:6px;background:var(--g);border-radius:50%;box-shadow:0 0 8px var(--g)}
-.pi b{font-family:'Anton',Impact,sans-serif;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--w);text-shadow:2px 2px 0 var(--p)}
-.pi small{font-family:ui-monospace,monospace;font-size:9.5px;letter-spacing:2px;color:rgba(140,255,58,.55);text-transform:uppercase}
-.at .ld{font-size:17.5px;font-weight:600;line-height:1.45;color:#e9f2df;margin-bottom:12px}
-.at .ld b{color:var(--g);text-shadow:0 0 16px rgba(140,255,58,.45)}
-.at p{color:#b9c9aa;font-size:15.5px}
-.dv{height:4px;background:linear-gradient(90deg,var(--g),var(--p) 70%,transparent);transform:skewX(-25deg);margin:20px 0}
-.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
-.dc{background:rgba(140,255,58,.05);border-left:3px solid var(--g);padding:10px 13px;transform:skewX(-8deg);box-shadow:inset 0 0 22px rgba(139,61,255,.1)}
-.dc>*{transform:skewX(8deg)}
-.dc dt{font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--g);font-weight:700;margin-bottom:3px}
-.dc dd{font-size:16px;font-weight:600;letter-spacing:.5px;color:var(--w)}
-.tl{display:flex;flex-direction:column;gap:20px}
-.tl-i{position:relative;padding-left:20px;border-left:2px solid rgba(140,255,58,.55)}
-.tl-i::before{content:'';position:absolute;left:-8px;top:6px;width:13px;height:13px;background:var(--p);border:2px solid var(--g);transform:rotate(45deg);box-shadow:0 0 12px rgba(140,255,58,.6)}
-.tl-y{font-family:ui-monospace,'SFMono-Regular',Menlo,monospace;font-size:12px;letter-spacing:3px;color:var(--g);text-transform:uppercase;font-weight:700}
-.tl-t{font-size:20px;font-weight:700;line-height:1.15;margin-top:3px;color:var(--w)}
-.tl-s{font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a7fa5;margin-top:2px}
-.tl-i p{margin-top:7px;font-size:15.5px;color:#a9b99a}
-.sk{display:flex;flex-direction:column;gap:17px}
-.sl-l{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;color:var(--w)}
-.sl-l em{font-style:normal;font-family:ui-monospace,monospace;font-size:13px;color:var(--g);text-shadow:0 0 12px rgba(140,255,58,.5)}
-.sl-b{height:12px;background:rgba(140,255,58,.1);margin-top:7px;transform:skewX(-22deg);overflow:hidden;border:1px solid rgba(140,255,58,.14)}
-.sl-b i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--g));box-shadow:0 0 16px rgba(140,255,58,.65);transition:width 1.1s cubic-bezier(.2,.9,.25,1) .12s}
-.sk-i.rd .sl-b i{width:var(--x)}
-.pj{display:grid;gap:14px}
-.pr{background:linear-gradient(120deg,rgba(139,61,255,.14),rgba(140,255,58,.05));border-left:3px solid var(--p);padding:14px 16px;transform:skewX(-6deg);cursor:pointer;transition:background .25s,border-color .25s,translate .25s,box-shadow .25s}
-.pr:hover{background:linear-gradient(120deg,rgba(140,255,58,.16),rgba(139,61,255,.1));border-left-color:var(--g);translate:8px 0;box-shadow:0 0 26px rgba(140,255,58,.16)}
-.pr-i{transform:skewX(6deg)}
-.pr h4{font-family:'Anton',Impact,sans-serif;font-size:19px;letter-spacing:2px;text-transform:uppercase;color:var(--w);margin-top:2px}
-.pr span{display:block;font-family:ui-monospace,monospace;font-size:11.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--g);margin-bottom:5px}
-.pr p{font-size:15px;color:#a9b99a;margin-top:6px}
-.cl{display:flex;flex-direction:column;gap:11px}
-.ci{display:flex;align-items:center;justify-content:space-between;gap:14px;background:rgba(139,61,255,.14);border-left:3px solid var(--g);color:var(--w);padding:11px 15px;text-decoration:none;transform:skewX(-10deg);transition:background .22s,translate .22s,box-shadow .22s}
-.ci:hover{background:rgba(140,255,58,.18);translate:7px 0;box-shadow:0 0 22px rgba(140,255,58,.2)}
-.ci>*{transform:skewX(10deg)}
-.ci b{font-family:ui-monospace,monospace;font-size:11.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--g);font-weight:700}
-.ci span{font-size:16px;font-weight:600}
-.sd{position:fixed;right:10px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:6px;color:rgba(140,255,58,.3);z-index:100;pointer-events:none;text-transform:uppercase}
-.ht{position:fixed;right:clamp(14px,3vw,40px);bottom:clamp(14px,3vh,34px);z-index:100;font-family:ui-monospace,monospace;font-size:11px;letter-spacing:5px;text-transform:uppercase;color:rgba(140,255,58,.4);animation:pl 2.6s ease-in-out infinite;pointer-events:none}
-@keyframes pl{50%{opacity:.28}}
-@media (max-width:820px){
-.tb{left:16px;right:16px;top:14px;max-width:none}
-.lg{font-size:clamp(30px,9.5vw,48px);text-shadow:4px 4px 0 var(--p),7px 7px 0 rgba(140,255,58,.5);animation:none;opacity:1}
-.tg{font-size:10px;letter-spacing:4px;margin-top:6px;animation:none;opacity:1}
-.hz{height:6px;width:120px;margin-top:10px}
-.mn{flex-direction:row;flex-wrap:wrap;gap:7px;margin-top:14px;animation:none;opacity:1}
-.mb{font-size:12.5px;letter-spacing:2px;padding:6px 16px 6px 14px;box-shadow:4px 4px 0 rgba(139,61,255,.95)}
-.mb:active{transform:skewX(-14deg) translate(2px,2px);box-shadow:1px 1px 0 rgba(139,61,255,.95)}
-.sd{display:none}
-.ht{display:none}
-.wn{width:calc(100vw - 24px)}
-.wn::after{transform:translate(16px,16px)}
-.wn::before{transform:translate(8px,8px)}
-.wn::after,.wn::before{clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%)}
-.wi{clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 22px) 100%,0 100%)}
-.wt{font-size:13px;letter-spacing:4px}
-.wh{padding:9px 12px}
-.wc{width:26px;height:26px;font-size:18px}
-.wb{max-height:none;padding:16px 16px 22px;font-size:15.5px;line-height:1.5}
-.ag{grid-template-columns:1fr;gap:16px;justify-items:center}
-.pf{width:min(200px,60vw);margin:0 auto;box-shadow:8px 8px 0 rgba(0,0,0,.55)}
-.at{width:100%}
-.at .ld{font-size:16px}
-.tl-t{font-size:17.5px}
-.tl-i p{font-size:14.5px}
-.pr h4{font-size:17px}
-.pr p{font-size:14px}
-.ci span{font-size:14.5px}
-.ci b{font-size:10.5px}
-.dc dd{font-size:15px}
-.dc dt{font-size:10.5px}
+:root {
+    --e0: #120521; --e1: #280a48; --e2: #681bbd; --e3: #39ff14; 
+    --e4: #1c9e05; --e5: #ff5500; --e6: #090310; --e7: #ffffff; --e8: #a396b8;
 }
-@media (max-width:400px){
-.mb{font-size:11.5px;padding:5px 13px 5px 11px;letter-spacing:1.5px}
-.lg{font-size:clamp(26px,9vw,38px)}
-.wb{font-size:15px;padding:14px 14px 20px}
-.wt{font-size:12px;letter-spacing:3px}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--e0);
+    /* Halftone pattern P5 Style */
+    background-image: 
+        radial-gradient(var(--e1) 15%, transparent 16%),
+        radial-gradient(var(--e1) 15%, transparent 16%),
+        linear-gradient(135deg, var(--e6) 0%, var(--e0) 100%);
+    background-size: 20px 20px, 20px 20px, 100% 100%;
+    background-position: 0 0, 10px 10px, 0 0;
+    color: var(--e7);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 30px;
+    position: relative;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
-@supports(padding:max(0px)){
-.tb{top:max(14px,env(safe-area-inset-top))}
-.ht{bottom:max(14px,env(safe-area-inset-bottom))}
+
+/* Enlace de accesibilidad */
+.skip-link {
+    position: absolute;
+    top: -100px; left: 20px;
+    padding: 10px 16px;
+    background: var(--e3);
+    color: var(--e6);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 10000;
+    transition: top 0.2s;
+    text-decoration: none;
+    border: 2px solid var(--e6);
+}
+.skip-link:focus { top: 20px; }
+
+/* Texto Gigante de Fondo */
+.bg-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25vw;
+    color: var(--e6);
+    opacity: 0.3;
+    z-index: -1;
+    white-space: nowrap;
+    animation: floatBg 20s linear infinite alternate;
+    pointer-events: none;
+    text-shadow: 10px 10px 0px var(--e1);
+    letter-spacing: 4px;
+}
+
+@keyframes floatBg {
+    0% { transform: translate(-55%, -45%) rotate(-10deg) scale(1); }
+    100% { transform: translate(-45%, -55%) rotate(-12deg) scale(1.05); }
+}
+
+/* Cinta de Peligro Superior */
+.b-cs {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 12px;
+    background: repeating-linear-gradient(-45deg, var(--e3), var(--e3) 20px, var(--e6) 20px, var(--e6) 40px);
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.p-cnt {
+    max-width: 1300px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+
+.sb { position: sticky; top: 60px; z-index: 10; display: flex; flex-direction: column; gap: 20px; }
+
+/* Tarjeta Principal de Identidad (Header Sidebar) */
+.b-cd {
+    background: var(--e7);
+    border: 6px solid var(--e6);
+    padding: 30px 20px;
+    clip-path: polygon(0 0, 100% 4%, 96% 100%, 2% 96%);
+    box-shadow: 12px 12px 0 var(--e2), 24px 24px 0 var(--e6);
+    position: relative;
+    transform: rotate(-3deg);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.b-cd:hover {
+    transform: rotate(-1deg) scale(1.02);
+}
+
+/* Decoración P5 (Estrella) */
+.p5-star {
+    position: absolute;
+    width: 44px; height: 44px;
+    background: var(--e3);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    top: -15px; right: -15px;
+    animation: spin 6s linear infinite;
+    border: 2px solid var(--e6);
+    z-index: 5;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+.b-ttl {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 65px;
+    line-height: 0.85;
+    color: var(--e6);
+    text-transform: uppercase;
+    transform: skewX(-8deg);
+    text-shadow: 4px 4px 0 var(--e3), 8px 8px 0 var(--e5);
+    letter-spacing: 2px;
+}
+
+.b-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: var(--e7);
+    background: var(--e6);
+    padding: 6px 12px;
+    display: inline-block;
+    transform: skewX(-12deg) rotate(-2deg);
+    margin-top: 15px;
+    border: 2px solid var(--e2);
+    font-weight: 700;
+}
+
+/* Menú Estilo P5 */
+.p5-m { display: flex; flex-direction: column; gap: 15px; }
+
+.m-btn {
+    appearance: none;
+    background: var(--e6);
+    color: var(--e7);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 5%, 98% 100%, 2% 95%);
+    border: none;
+    box-shadow: 6px 6px 0 var(--e1);
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.m-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0%; height: 100%;
+    background: var(--e3);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.m-btn:hover {
+    transform: scale(1.05) rotate(-2deg) translateX(15px);
+    color: var(--e6);
+    box-shadow: 8px 8px 0 var(--e5);
+}
+
+.m-btn:hover::before { width: 100%; }
+
+.m-btn.active {
+    background: var(--e3);
+    color: var(--e6);
+    clip-path: polygon(2% 2%, 98% 0%, 100% 98%, 0% 100%);
+    transform: scale(1.1) rotate(2deg) translateX(20px);
+    box-shadow: 10px 10px 0 var(--e2);
+}
+
+/* Elemento HUD de Estado */
+.hud {
+    background: var(--e6);
+    border-left: 5px solid var(--e5);
+    padding: 12px 16px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    transform: skewX(-6deg);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 6px 6px 0 var(--e2);
+    text-transform: uppercase;
+}
+.hud-r { display: flex; justify-content: space-between; gap: 12px; transform: skewX(6deg); }
+.hud-r span:first-child { color: var(--e8); }
+.hud-ok { color: var(--e3); font-weight: 700; }
+
+/* Contenedor Principal (Paneles) */
+.c-ar { position: relative; z-index: 5; min-width: 0; }
+
+.p5-p {
+    display: none;
+    background: var(--e1);
+    border: 6px solid var(--e6);
+    padding: 40px;
+    clip-path: polygon(1% 1%, 100% 0%, 98% 99%, 0% 100%);
+    box-shadow: 15px 15px 0 var(--e6), 25px 25px 0 var(--e2);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.p5-p::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1.5" fill="%23681bbd" opacity="0.3"/></svg>');
+    z-index: 0; pointer-events: none;
+}
+
+.p5-p > * { position: relative; z-index: 1; }
+
+.p5-p.active {
+    display: block;
+    animation: smashIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes smashIn {
+    0% { opacity: 0; transform: scale(0.8) rotate(5deg) translateY(50px); filter: blur(5px); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg) translateY(0); filter: blur(0); }
+}
+
+.p-hd {
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 5px solid var(--e3);
+    padding-bottom: 15px; margin-bottom: 30px;
+}
+
+.p-ttl {
+    font-family: 'Bebas Neue', cursive; font-size: 50px;
+    letter-spacing: 4px; color: var(--e3);
+    transform: skewX(-10deg);
+    text-shadow: 4px 4px 0 var(--e6);
+    position: relative;
+    line-height: 1;
+}
+
+.p-ttl::after {
+    content: ''; position: absolute;
+    bottom: -10px; left: -10px;
+    width: 50px; height: 15px;
+    background: var(--e5);
+    z-index: -1; transform: skewX(20deg);
+}
+
+.e-cd {
+    font-family: 'Oswald', sans-serif; font-size: 14px;
+    color: var(--e6); background: var(--e5);
+    padding: 5px 12px; font-weight: 700;
+    transform: skewX(-15deg); border: 2px solid var(--e6);
+    letter-spacing: 1px;
+}
+
+/* Espacio de Imagen P5 Style (Perfil) */
+.pf-g {
+    display: grid; grid-template-columns: 220px 1fr; gap: 30px; align-items: center;
+}
+
+.img-placeholder {
+    width: 100%; aspect-ratio: 3/4;
+    background: var(--e6);
+    position: relative;
+    clip-path: polygon(8% 0, 100% 4%, 92% 100%, 0 96%);
+    border: 4px solid var(--e3);
+    overflow: hidden;
+}
+
+.img-wrapper {
+    position: relative;
+    filter: drop-shadow(8px 8px 0 var(--e3)) drop-shadow(15px 15px 0 var(--e6));
+    transform: rotate(-3deg);
+    transition: transform 0.3s;
+}
+
+.img-wrapper:hover { transform: rotate(0deg) scale(1.05); }
+
+.img-placeholder img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(150%);
+    mix-blend-mode: luminosity;
+    transition: all 0.3s;
+}
+
+.img-wrapper:hover .img-placeholder img {
+    filter: grayscale(0%) contrast(110%);
+    mix-blend-mode: normal;
+}
+
+.img-badge {
+    position: absolute; bottom: -15px; right: -15px;
+    background: var(--e5); color: var(--e7);
+    font-family: 'Bebas Neue', cursive; font-size: 24px;
+    letter-spacing: 2px;
+    padding: 5px 15px; transform: skewX(-15deg) rotate(-5deg);
+    border: 3px solid var(--e6); z-index: 2;
+}
+
+.b-tx { font-size: 19px; line-height: 1.7; font-weight: 600; text-shadow: 1px 1px 0 #000; }
+.b-tx p + p { margin-top: 15px; }
+.b-tx strong { color: var(--e6); background: var(--e3); padding: 2px 8px; font-weight: 900; transform: skewX(-10deg); display: inline-block; }
+
+/* Info Boxes */
+.i-bg { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 35px; }
+.i-bx {
+    background: var(--e6); border: 2px solid var(--e7);
+    border-left: 10px solid var(--e3);
+    padding: 15px; transform: skewX(-8deg);
+    box-shadow: 5px 5px 0 var(--e2);
+}
+.i-bx label { display: block; font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 700; color: var(--e5); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; }
+.i-bx span { font-family: 'Oswald', sans-serif; font-size: 22px; color: var(--e7); font-weight: 500; }
+
+/* Categorías de Habilidades */
+.skg + .skg { margin-top: 35px; }
+.skg-t {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: var(--e3);
+    margin-bottom: 20px;
+    transform: skewX(-8deg);
+    display: inline-block;
+    text-shadow: 3px 3px 0 var(--e6);
+}
+
+/* Barras de Habilidad tipo HP/SP RPG */
+.sk-l { display: flex; flex-direction: column; gap: 25px; }
+.sk-i { position: relative; }
+.sk-if { display: flex; justify-content: space-between; font-family: 'Oswald', sans-serif; font-size: 20px; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase; }
+.sk-if .prc { color: var(--e3); font-weight: bold; text-shadow: 2px 2px 0 var(--e6); }
+
+.pg-bg {
+    height: 24px; background: var(--e6);
+    border: 3px solid var(--e7);
+    transform: skewX(-20deg);
+    position: relative; box-shadow: 4px 4px 0 var(--e2);
+    overflow: hidden;
+}
+.pg-fl {
+    height: 100%;
+    background: linear-gradient(90deg, var(--e2) 0%, var(--e3) 100%);
+    width: 0%;
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+}
+.pg-fl::after {
+    content: ''; position: absolute; right: 0; top: 0;
+    width: 10px; height: 100%; background: var(--e7);
+}
+
+/* Tarjetas de Proyectos/Experiencia */
+.pj-c {
+    background: var(--e7); border: 4px solid var(--e6);
+    padding: 25px; margin-bottom: 25px;
+    clip-path: polygon(0 0, 98% 2%, 100% 100%, 2% 98%);
+    box-shadow: 8px 8px 0 var(--e5), 14px 14px 0 var(--e6);
+    color: var(--e6); transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex; gap: 20px; align-items: center;
+}
+.pj-c:hover { transform: translateX(10px) scale(1.02); box-shadow: 12px 12px 0 var(--e3), 18px 18px 0 var(--e6); }
+
+.pj-img {
+    width: 120px; height: 120px; flex-shrink: 0;
+    background: var(--e1); border: 3px solid var(--e6);
+    clip-path: polygon(10% 0, 100% 10%, 90% 100%, 0 90%);
+    overflow: hidden;
+}
+.pj-img img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.pj-c:hover .pj-img img { transform: scale(1.08); }
+
+.pj-info { flex-grow: 1; min-width: 0; }
+.pj-meta { color: var(--e5); font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 2px; display: inline-block; background: var(--e6); padding: 2px 10px; transform: skewX(-10deg); margin-bottom: 5px; text-transform: uppercase; }
+.pj-t { font-family: 'Bebas Neue', cursive; font-size: 36px; color: var(--e6); line-height: 1; text-transform: uppercase; letter-spacing: 1px; }
+.pj-co { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--e2); text-transform: uppercase; letter-spacing: 1.5px; font-size: 15px; margin-top: 4px; }
+.pj-d { font-size: 16px; color: #333; margin-top: 8px; font-weight: 600; line-height: 1.5; }
+
+/* Etiquetas de Tecnologías en Tarjetas */
+.pj-tg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.pj-tg span {
+    font-family: 'Oswald', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
+    border: 2px solid var(--e6); background: var(--e6); color: var(--e3);
+    padding: 3px 8px; text-transform: uppercase; transform: skewX(-8deg); display: inline-block;
+}
+
+/* Contacto */
+.ct-g { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
+.ct-l {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--e6); border: 4px solid var(--e7);
+    color: var(--e7); padding: 20px 30px; text-decoration: none;
+    font-family: 'Bebas Neue', cursive; font-size: 28px; letter-spacing: 3px;
+    clip-path: polygon(2% 0, 100% 0, 98% 100%, 0% 100%);
+    transition: all 0.3s; position: relative; overflow: hidden;
+}
+.ct-l::before {
+    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: var(--e3); z-index: -1; transition: left 0.3s;
+}
+.ct-l:hover { color: var(--e6); transform: scale(1.03) rotate(-1deg); box-shadow: 10px 10px 0 var(--e5); border-color: var(--e6); }
+.ct-l:hover::before { left: 0; }
+
+/* Pie de Página */
+.ft {
+    max-width: 1300px;
+    margin: 40px auto 0;
+    padding: 20px 10px 0;
+    border-top: 3px dashed var(--e2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--e8);
+    position: relative;
+    z-index: 5;
+}
+.ft strong { color: var(--e3); }
+
+@media (max-width: 950px) {
+    .p-cnt { grid-template-columns: 1fr; gap: 30px; padding-top: 20px; }
+    .sb { position: relative; top: 0; }
+    .p5-m { flex-direction: row; flex-wrap: wrap; }
+    .m-btn { font-size: 22px; padding: 10px 15px; flex-grow: 1; text-align: center; }
+    .m-btn.active { transform: translateY(-5px) scale(1.05) rotate(0deg); }
+    .pf-g { grid-template-columns: 1fr; text-align: center; }
+    .img-wrapper { width: 200px; margin: 0 auto 20px; }
+    .pj-c { flex-direction: column; text-align: center; clip-path: none; transform: skewX(-3deg); }
+    .bg-text { font-size: 40vw; }
+    .ct-l { font-size: 22px; flex-direction: column; text-align: center; gap: 5px; }
 }
 </style>
 </head>
-<body oncontextmenu="return false" onkeydown="return !((event.keyCode==123)||(event.ctrlKey&&event.shiftKey&&(event.keyCode==73||event.keyCode==74||event.keyCode==67))||(event.ctrlKey&&(event.keyCode==85||event.keyCode==83||event.keyCode==80)))" onselectstart="return false" ondragstart="return false" oncopy="return false" oncut="return false">
+<body>
 
-<div class="bg"></div>
-<div class="gp"></div>
-<div class="gg"></div>
-<div class="sl"></div>
-<div class="vg"></div>
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-<header class="tb">
-  <h1 class="lg">PORTAFOLIO</h1>
-  <p class="tg">Leonardo Simon</p>
-  <div class="hz"></div>
-  <nav class="mn">
-    <button class="mb" data-target="about"><span class="tx">Sobre mí</span></button>
-    <button class="mb" data-target="exp"><span class="tx">Experiencia</span></button>
-    <button class="mb" data-target="skills"><span class="tx">Habilidades</span></button>
-    <button class="mb" data-target="projects"><span class="tx">Proyectos</span></button>
-    <button class="mb" data-target="contact"><span class="tx">Contacto</span></button>
-  </nav>
-</header>
+<div class="bg-text" aria-hidden="true">CONFIDANT LOG</div>
+<div class="b-cs" aria-hidden="true"></div>
 
-<main id="dk">
-
-  <section class="wn" id="win-about">
-    <div class="wi">
-      <div class="wh">
-        <span class="wt">Sobre mí</span>
-        <button class="wc" aria-label="Cerrar">×</button>
-      </div>
-      <div class="st"><i></i></div>
-      <div class="wb">
-        <div class="ag">
-          <div class="pf rv">
-            <div class="pi">
-              <div class="cm"></div>
-              <b>Tu foto</b>
-              <small>400 × 500 px</small>
+<div class="p-cnt">
+    <aside class="sb">
+        <div class="b-cd">
+            <div class="p5-star" aria-hidden="true"></div>
+            <h1 class="b-ttl">LEONARDO<br>SIMON</h1>
+            <div class="b-sub">DEV &amp; MULTIMEDIA</div>
+            <div style="margin-top:15px">
+                <span class="e-cd" style="font-size:12px; background:var(--e6); color:var(--e3);">TEST TYPE-01 / QRO</span>
             </div>
-          </div>
-          <div class="at">
-            <p class="ld rv">Hola, soy <b>Leonardo Simon</b>. Soy programador de diferentes lenguajes, Profesor de Ingles y Musica teorica.</p>
-            <p class="rv">He empezado en el mundo laboral en 2026 y me gustaria explorar nuevas areas de trabajo.</p>
-          </div>
         </div>
-        <div class="dv rv"></div>
-        <dl class="dg">
-          <div class="dc rv"><dt>Ubicación</dt><dd>Queretaro, Mexico</dd></div>
-          <div class="dc rv"><dt>Rol</dt><dd>Cualquiera</dd></div>
-          <div class="dc rv"><dt>Experiencia</dt><dd>1 año</dd></div>
-          <div class="dc rv"><dt>Idiomas</dt><dd>ESPAÑOL-INGLES-LSM-ASL</dd></div>
-        </dl>
-      </div>
-    </div>
-  </section>
 
-  <section class="wn" id="win-exp">
-    <div class="wi">
-      <div class="wh">
-        <span class="wt">Experiencia</span>
-        <button class="wc" aria-label="Cerrar">×</button>
-      </div>
-      <div class="st"><i></i></div>
-      <div class="wb">
-        <div class="tl">
-          <article class="tl-i rv">
-            <div class="tl-y">2025 — 2025</div>
-            <h3 class="tl-t">Atencion al cliente</h3>
-            <div class="tl-s">Imperial Legion Abogados</div>
-            <p>Atendia a los clientes para que tuvieran una experiencia agradable</p>
-          </article>
+        <nav class="p5-m" role="tablist" aria-label="Secciones del portafolio">
+            <button class="m-btn active" role="tab" aria-selected="true" id="tab-p-ab" aria-controls="p-ab" data-t="p-ab">01 // SOBRE MÍ</button>
+            <button class="m-btn" role="tab" aria-selected="false" id="tab-p-ex" aria-controls="p-ex" data-t="p-ex">02 // EXPERIENCIA</button>
+            <button class="m-btn" role="tab" aria-selected="false" id="tab-p-sk" aria-controls="p-sk" data-t="p-sk">03 // HABILIDADES</button>
+            <button class="m-btn" role="tab" aria-selected="false" id="tab-p-pj" aria-controls="p-pj" data-t="p-pj">04 // PROYECTOS</button>
+            <button class="m-btn" role="tab" aria-selected="false" id="tab-p-ct" aria-controls="p-ct" data-t="p-ct">05 // CONTACTO</button>
+        </nav>
+
+        <div class="hud" aria-hidden="true">
+            <div class="hud-r"><span>HORA LOCAL</span><span id="clock">--:--:--</span></div>
+            <div class="hud-r"><span>SISTEMA</span><span class="hud-ok">● ONLINE</span></div>
+            <div class="hud-r"><span>SEÑAL</span><span>QUERÉTARO · MX</span></div>
         </div>
-      </div>
-    </div>
-  </section>
+    </aside>
 
-  <section class="wn" id="win-skills">
-    <div class="wi">
-      <div class="wh">
-        <span class="wt">Habilidades</span>
-        <button class="wc" aria-label="Cerrar">×</button>
-      </div>
-      <div class="st"><i></i></div>
-      <div class="wb">
-        <div class="sk">
-          <div class="sk-i rv"><div class="sl-l"><span>HTML &amp; CSS</span><em>95%</em></div><div class="sl-b"><i style="--x:95%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>JavaScript / TypeScript</span><em>78%</em></div><div class="sl-b"><i style="--x:78%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>Atencion al cliente &amp; a</span><em>99%</em></div><div class="sl-b"><i style="--x:99%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>Animación &amp; Motion</span><em>85%</em></div><div class="sl-b"><i style="--x:85%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>Diseño de interfaz</span><em>82%</em></div><div class="sl-b"><i style="--x:82%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>Node.js &amp; APIs</span><em>74%</em></div><div class="sl-b"><i style="--x:74%"></i></div></div>
-          <div class="sk-i rv"><div class="sl-l"><span>Git &amp; CI/CD</span><em>86%</em></div><div class="sl-b"><i style="--x:86%"></i></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main class="c-ar" id="main-content">
+        <!-- SECCIÓN 01: SOBRE MÍ -->
+        <section id="p-ab" class="p5-p active" role="tabpanel" aria-labelledby="tab-p-ab" tabindex="0">
+            <div class="p-hd">
+                <h2 class="p-ttl">PERFIL PERSONAL</h2>
+                <span class="e-cd">SYS.STATUS: ACTIVE</span>
+            </div>
+            
+            <div class="pf-g">
+                <div class="img-wrapper">
+                    <div class="img-placeholder">
+                        <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=600&auto=format&fit=crop" alt="Retrato Leonardo Simon">
+                    </div>
+                    <div class="img-badge">PILOT 01</div>
+                </div>
+                
+                <div class="b-tx">
+                    <p>Hola, soy <strong>Leonardo Simon</strong>. Programador multidisciplinario, profesor de Inglés y teoría musical.</p>
+                    <p>Inicié mi trayectoria en el ámbito profesional enfocado en crear soluciones de software dinámicas, diseño de interfaces estilizadas e integración de herramientas multimedia.</p>
+                </div>
+            </div>
 
-  <section class="wn" id="win-projects">
-    <div class="wi">
-      <div class="wh">
-        <span class="wt">Proyectos</span>
-        <button class="wc" aria-label="Cerrar">×</button>
-      </div>
-      <div class="st"><i></i></div>
-      <div class="wb">
-        <div class="pj">
-          <article class="pr rv"><div class="pr-i"><span>2026 · Aplicacion</span><h4>Afinia</h4><p>Aplicacion para afinar instrumentos musicales y entender la teoria musical.</p></div></article>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="i-bg">
+                <div class="i-bx"><label>Ubicación</label><span>Querétaro, MX</span></div>
+                <div class="i-bx"><label>Experiencia</label><span>1+ Años</span></div>
+                <div class="i-bx"><label>Idiomas</label><span>ES / EN / LSM / ASL</span></div>
+                <div class="i-bx"><label>Enfoque</label><span>UI · Audio · Web</span></div>
+            </div>
+        </section>
 
-  <section class="wn" id="win-contact">
-    <div class="wi">
-      <div class="wh">
-        <span class="wt">Contacto</span>
-        <button class="wc" aria-label="Cerrar">×</button>
-      </div>
-      <div class="st"><i></i></div>
-      <div class="wb">
-        <p class="ld rv">¿Tienes un proyecto en mente o buscas reforzar tu equipo? <b>Hablemos.</b></p>
-        <div class="cl">
-          <a class="ci rv" href="mailto:hola@alexmoreno.dev"><b>Email</b><span>wksimoonk@gmail.com</span></a>
-          <a class="ci rv" href="tel:+524273816560"><b>Teléfono</b><span>+52 427 381 6560</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- SECCIÓN 02: EXPERIENCIA -->
+        <section id="p-ex" class="p5-p" role="tabpanel" aria-labelledby="tab-p-ex" tabindex="0">
+            <div class="p-hd">
+                <h2 class="p-ttl">TRAYECTORIA</h2>
+                <span class="e-cd">LOGS // 2024–2025</span>
+            </div>
+            
+            <article class="pj-c">
+                <div class="pj-img">
+                    <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=400&auto=format&fit=crop" alt="Imperial Legion Abogados">
+                </div>
+                <div class="pj-info">
+                    <span class="pj-meta">2025</span>
+                    <h3 class="pj-t">Atención al Cliente &amp; Gestión</h3>
+                    <p class="pj-co">Imperial Legion Abogados</p>
+                    <p class="pj-d">Gestión y atención directa a usuarios para garantizar una experiencia de servicio eficiente y estructurada.</p>
+                    <div class="pj-tg">
+                        <span>Atención</span>
+                        <span>Gestión</span>
+                        <span>Soporte</span>
+                    </div>
+                </div>
+            </article>
 
-</main>
+            <article class="pj-c">
+                <div class="pj-img">
+                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=400&auto=format&fit=crop" alt="Docencia">
+                </div>
+                <div class="pj-info">
+                    <span class="pj-meta">ACTUALIDAD</span>
+                    <h3 class="pj-t">Docencia &amp; Clases Particulares</h3>
+                    <p class="pj-co">Inglés · Teoría Musical</p>
+                    <p class="pj-d">Enseñanza personalizada de idioma inglés y fundamentos de teoría musical, adaptando el material al ritmo y objetivos de cada alumno.</p>
+                    <div class="pj-tg">
+                        <span>Docencia</span>
+                        <span>Idiomas</span>
+                        <span>Música</span>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-<div class="sd">PORTAFOLIO SIMON RIZZ</div>
-<div class="ht">ES NUEVOO</div>
+        <!-- SECCIÓN 03: HABILIDADES -->
+        <section id="p-sk" class="p5-p" role="tabpanel" aria-labelledby="tab-p-sk" tabindex="0">
+            <div class="p-hd">
+                <h2 class="p-ttl">TECH STACK</h2>
+                <span class="e-cd">SYNC RATIO</span>
+            </div>
+            
+            <div class="skg">
+                <h3 class="skg-t">// TÉCNICAS</h3>
+                <div class="sk-l">
+                    <div class="sk-i">
+                        <div class="sk-if"><span>HTML5 &amp; CSS3 Layouts</span><span class="prc">95%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="95%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>JavaScript / TypeScript</span><span class="prc">78%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="78%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Node.js &amp; APIs</span><span class="prc">74%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="74%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Animación UI &amp; Estilos P5</span><span class="prc">85%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="85%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skg">
+                <h3 class="skg-t">// BLANDAS &amp; OTRAS</h3>
+                <div class="sk-l">
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Atención &amp; Soporte Técnico</span><span class="prc">99%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="99%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Docencia &amp; Comunicación</span><span class="prc">92%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="92%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Teoría Musical &amp; Audio</span><span class="prc">90%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="90%"></div></div>
+                    </div>
+                    <div class="sk-i">
+                        <div class="sk-if"><span>Idiomas (ES / EN / LSM / ASL)</span><span class="prc">88%</span></div>
+                        <div class="pg-bg"><div class="pg-fl" data-p="88%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 04: PROYECTOS -->
+        <section id="p-pj" class="p5-p" role="tabpanel" aria-labelledby="tab-p-pj" tabindex="0">
+            <div class="p-hd">
+                <h2 class="p-ttl">PROYECTOS DESTACADOS</h2>
+                <span class="e-cd">DEPLOYED</span>
+            </div>
+            
+            <article class="pj-c">
+                <div class="pj-img">
+                    <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=400&auto=format&fit=crop" alt="Afinia App">
+                </div>
+                <div class="pj-info">
+                    <span class="pj-meta">2026 · APP INTERACTIVA</span>
+                    <h3 class="pj-t">AFINIA</h3>
+                    <p class="pj-d">Aplicación enfocada en la afinación precisa de instrumentos musicales y el aprendizaje práctico de teoría musical.</p>
+                    <div class="pj-tg">
+                        <span>Audio</span>
+                        <span>Web App</span>
+                        <span>Educación</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pj-c">
+                <div class="pj-img">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&auto=format&fit=crop" alt="Portafolio Interactivo">
+                </div>
+                <div class="pj-info">
+                    <span class="pj-meta">2026 · FRONTEND</span>
+                    <h3 class="pj-t">Portafolio Interactivo</h3>
+                    <p class="pj-d">Sitio personal con estética tipo P5: navegación por pestañas, transiciones diagonales y layout responsivo construido desde cero sin frameworks.</p>
+                    <div class="pj-tg">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Vanilla JS</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 05: CONTACTO -->
+        <section id="p-ct" class="p5-p" role="tabpanel" aria-labelledby="tab-p-ct" tabindex="0">
+            <div class="p-hd">
+                <h2 class="p-ttl">CANALES DE CONTACTO</h2>
+                <span class="e-cd">OPEN COMM</span>
+            </div>
+            <p style="margin-bottom:25px; font-size:20px; font-weight:600;">¿Tienes un proyecto en mente o buscas un perfil técnico con enfoque dinámico? <strong style="color:var(--e3); text-shadow: 1px 1px 0 #000;">Iniciemos la misión.</strong></p>
+            
+            <div class="ct-g">
+                <a href="mailto:wksimoonk@gmail.com" class="ct-l">
+                    <span>EMAIL</span><span>wksimoonk@gmail.com</span>
+                </a>
+                <a href="tel:+524273816560" class="ct-l">
+                    <span>TELÉFONO</span><span>+52 427 381 6560</span>
+                </a>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="ft">
+    <span>© <span id="year"></span> LEONARDO SIMON</span>
+    <span>BUILT WITH <strong>VANILLA JS</strong> · NO FRAMEWORKS</span>
+</footer>
 
 <script>
-!function(){"use strict";
-var W=[].slice.call(document.querySelectorAll(".wn")),
-Z=10,O=0,
-M=function(){return innerWidth<=820},
-OB=new WeakMap();
+document.addEventListener('DOMContentLoaded', () => {
+    const btns = document.querySelectorAll('.m-btn');
+    const panels = document.querySelectorAll('.p5-p');
+    const clockEl = document.getElementById('clock');
+    const yearEl = document.getElementById('year');
 
-function HDR(){
-var h=document.querySelector(".tb");
-return h?h.getBoundingClientRect().bottom:200
-}
+    // Año dinámico en el footer
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 
-function FITBODY(w,top){
-var head=w.querySelector(".wh"),
-track=w.querySelector(".st"),
-body=w.querySelector(".wb");
-if(!head||!track||!body)return;
-var hH=head.offsetHeight||40,
-tH=track.offsetHeight||3,
-avail=innerHeight-top-14,
-bMax=Math.max(140,avail-hH-tH);
-body.style.maxHeight=bMax+"px"
-}
+    // Actualización del Reloj en Vivo
+    const updateClock = () => {
+        if (!clockEl) return;
+        const d = new Date();
+        const pad = (n) => String(n).padStart(2, '0');
+        clockEl.textContent = `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+    };
+    updateClock();
+    setInterval(updateClock, 1000);
 
-function CLEARBODY(w){
-var body=w.querySelector(".wb");
-if(body)body.style.maxHeight=""
-}
+    // Animación de las barras de progreso
+    const animateBars = (panel) => {
+        const bars = panel.querySelectorAll('.pg-fl');
+        bars.forEach((bar, index) => {
+            bar.style.transition = 'none';
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.transition = 'width 1.2s cubic-bezier(0.25, 1, 0.5, 1)';
+                bar.style.width = bar.getAttribute('data-p');
+            }, 80 + index * 90);
+        });
+    };
 
-function GO(b){
-if(OB.has(b))return OB.get(b);
-var io=new IntersectionObserver(function(es){
-es.forEach(function(e){
-if(e.isIntersecting){
-e.target.classList.add("rd");
-io.unobserve(e.target)
-}
-})
-},{root:b,threshold:.08,rootMargin:"0px 0px -20px 0px"});
-OB.set(b,io);
-return io
-}
+    // Función para cambiar de pestaña
+    const activateTab = (targetId, options = {}) => {
+        const targetBtn = Array.from(btns).find(b => b.getAttribute('data-t') === targetId);
+        const targetPanel = document.getElementById(targetId);
 
-document.querySelectorAll(".wb").forEach(function(b){
-var io=GO(b);
-b.querySelectorAll(".rv").forEach(function(e){io.observe(e)})
+        if (!targetBtn || !targetPanel) return;
+
+        // Actualizar estado de los botones
+        btns.forEach(b => {
+            const isSelected = b === targetBtn;
+            b.classList.toggle('active', isSelected);
+            b.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+            b.tabIndex = isSelected ? 0 : -1;
+        });
+
+        // Actualizar visibilidad de paneles
+        panels.forEach(p => {
+            p.classList.remove('active');
+            p.style.animation = 'none';
+            void p.offsetHeight; /* Recalcular estilo para reiniciar animación */
+            p.style.animation = null;
+        });
+
+        targetPanel.classList.add('active');
+
+        if (targetId === 'p-sk') {
+            setTimeout(() => animateBars(targetPanel), 100);
+        }
+
+        if (options.updateHash !== false) {
+            history.replaceState(null, '', '#' + targetId);
+        }
+
+        if (options.focus) {
+            targetBtn.focus();
+        }
+
+        if (window.matchMedia('(max-width: 950px)').matches) {
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
+    // Listeners para clics en botones
+    btns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-t');
+            activateTab(targetId);
+        });
+    });
+
+    // Navegación por teclado (Teclas 1 a 5 y Flechas)
+    document.addEventListener('keydown', (e) => {
+        const activeTag = (document.activeElement.tagName || '').toLowerCase();
+        if (activeTag === 'input' || activeTag === 'textarea') return;
+
+        if (e.key >= '1' && e.key <= '5') {
+            const index = parseInt(e.key, 10) - 1;
+            if (btns[index]) {
+                e.preventDefault();
+                activateTab(btns[index].getAttribute('data-t'), { focus: true });
+            }
+            return;
+        }
+
+        const focused = document.activeElement;
+        if (!focused || !focused.classList.contains('m-btn')) return;
+
+        const currentIndex = Array.from(btns).indexOf(focused);
+        let newIndex = null;
+
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            newIndex = (currentIndex + 1) % btns.length;
+        } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            newIndex = (currentIndex - 1 + btns.length) % btns.length;
+        }
+
+        if (newIndex !== null) {
+            e.preventDefault();
+            btns[newIndex].focus();
+            activateTab(btns[newIndex].getAttribute('data-t'), { focus: true });
+        }
+    });
+
+    // Cargar pestaña mediante Hash en la URL
+    const initialHash = window.location.hash.replace('#', '');
+    if (initialHash && document.getElementById(initialHash)) {
+        activateTab(initialHash, { updateHash: false });
+    }
 });
-
-function RR(w){
-var b=w.querySelector(".wb");
-if(!b)return;
-var io=GO(b),
-is=b.querySelectorAll(".rv");
-is.forEach(function(e){io.unobserve(e);io.observe(e)});
-requestAnimationFrame(function(){
-var br=b.getBoundingClientRect();
-is.forEach(function(e){
-var r=e.getBoundingClientRect();
-if(r.top<br.bottom&&r.bottom>br.top){
-e.classList.add("rd");
-io.unobserve(e)
-}
-})
-})
-}
-
-function UP(w){
-var b=w.querySelector(".wb"),
-f=w.querySelector(".st i");
-if(!b||!f)return;
-var m=b.scrollHeight-b.clientHeight,
-p=m>4?b.scrollTop/m:0;
-f.style.width=(p*100)+"%"
-}
-
-document.querySelectorAll(".wb").forEach(function(b){
-var w=b.closest(".wn");
-b.addEventListener("scroll",function(){UP(w)},{passive:!0})
-});
-
-function TZ(w){Z++;w.style.zIndex=Z}
-
-function PM(w){
-var hb=HDR(),
-top=Math.max(10,hb+10),
-ww=w.offsetWidth,
-maxLeft=Math.max(6,innerWidth-ww-6);
-w.style.left=Math.min(12,maxLeft)+"px";
-w.style.top=top+"px";
-FITBODY(w,top)
-}
-
-function OW(w){
-var o=w.classList.contains("op");
-if(!o){
-w.classList.add("op");
-if(M()){PM(w)}
-else{
-CLEARBODY(w);
-var ww=w.offsetWidth,
-hh=w.offsetHeight,
-bx=Math.min(innerWidth*.32,430),
-by=96,
-st=34,
-k=O%6,
-x=bx+k*st,
-y=by+k*st;
-x=Math.max(6,Math.min(x,innerWidth-ww-18));
-y=Math.max(6,Math.min(y,innerHeight-hh-18));
-w.style.left=x+"px";
-w.style.top=y+"px"
-}
-O++;
-setTimeout(function(){RR(w);UP(w)},60)
-}
-TZ(w)
-}
-
-document.querySelectorAll(".mb").forEach(function(b){
-b.addEventListener("click",function(){
-var w=document.getElementById("win-"+b.dataset.target);
-if(!w)return;
-if(M()){W.forEach(function(x){if(x!==w)x.classList.remove("op")})}
-OW(w)
-})
-});
-
-W.forEach(function(w){
-var h=w.querySelector(".wh"),
-sx=0,sy=0,ox=0,oy=0,a=!1;
-
-h.addEventListener("pointerdown",function(e){
-if(e.target.closest(".wc"))return;
-a=!0;
-TZ(w);
-sx=e.clientX;sy=e.clientY;
-ox=w.offsetLeft;oy=w.offsetTop;
-try{h.setPointerCapture(e.pointerId)}catch(_){}
-});
-
-h.addEventListener("pointermove",function(e){
-if(!a)return;
-var ww=w.offsetWidth,
-nx=ox+(e.clientX-sx),
-ny=oy+(e.clientY-sy);
-nx=Math.max(-ww+100,Math.min(nx,innerWidth-90));
-ny=Math.max(0,Math.min(ny,innerHeight-54));
-w.style.left=nx+"px";
-w.style.top=ny+"px"
-});
-
-function R(e){
-if(!a)return;
-a=!1;
-try{h.releasePointerCapture(e.pointerId)}catch(_){}
-}
-
-h.addEventListener("pointerup",R);
-h.addEventListener("pointercancel",R)
-});
-
-document.querySelectorAll(".wc").forEach(function(b){
-b.addEventListener("click",function(e){
-e.stopPropagation();
-var w=b.closest(".wn");
-w.classList.remove("op");
-CLEARBODY(w)
-})
-});
-
-document.addEventListener("keydown",function(e){
-if(e.key!=="Escape")return;
-var o=W.filter(function(w){return w.classList.contains("op")});
-if(!o.length)return;
-o.sort(function(a,b){return(parseInt(a.style.zIndex)||0)-(parseInt(b.style.zIndex)||0)});
-var t=o[o.length-1];
-t.classList.remove("op");
-CLEARBODY(t)
-});
-
-addEventListener("resize",function(){
-var m=M();
-W.forEach(function(w){
-if(!w.classList.contains("op"))return;
-if(m){
-var ww=w.offsetWidth,
-x=Math.max(6,Math.min(w.offsetLeft,Math.max(6,innerWidth-ww-6))),
-y=Math.max(0,Math.min(w.offsetTop,Math.max(0,innerHeight-100)));
-w.style.left=x+"px";
-w.style.top=y+"px";
-FITBODY(w,y)
-}else{
-CLEARBODY(w);
-var ww2=w.offsetWidth,
-x2=Math.max(6,Math.min(w.offsetLeft,innerWidth-ww2-18)),
-y2=Math.max(6,Math.min(w.offsetTop,innerHeight-60));
-w.style.left=x2+"px";
-w.style.top=y2+"px"
-}
-UP(w)
-})
-});
-
-addEventListener("load",function(){
-setTimeout(function(){
-OW(document.getElementById("win-about"))
-},M()?350:850)
-});
-
-document.addEventListener("contextmenu",function(e){e.preventDefault();return!1});
-document.addEventListener("selectstart",function(e){e.preventDefault();return!1});
-document.addEventListener("dragstart",function(e){e.preventDefault();return!1});
-document.addEventListener("copy",function(e){e.preventDefault();return!1});
-document.addEventListener("cut",function(e){e.preventDefault();return!1});
-document.addEventListener("paste",function(e){e.preventDefault();return!1});
-
-document.addEventListener("keydown",function(e){
-var k=e.keyCode||e.which,
-c=e.ctrlKey||e.metaKey,
-s=e.shiftKey;
-if(k===123)return e.preventDefault(),!1;
-if(c&&s&&(k===73||k===74||k===67))return e.preventDefault(),!1;
-if(c&&(k===85||k===83||k===80||k===65))return e.preventDefault(),!1;
-if(k===121||k===118&&s)return e.preventDefault(),!1;
-if(e.key==="F12")return e.preventDefault(),!1;
-});
-}();
 </script>
-
 </body>
 </html>
